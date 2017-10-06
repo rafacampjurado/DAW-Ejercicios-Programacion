@@ -16,9 +16,19 @@ public class HolaMundo { // Clase principal
 
 ```
 
-Para compilar el programa teclea lo siguiente:
+Puedes ejecutar el programa mediante el comando `java`:
 
 ```console
 javac HolaMundo.java
 
 ```
+## Qué se estudia en Programación
+
+* Lenguaje de programación Java.
+* Comandos de Linux.
+* Git y GitHub.
+
+## Bibliografía.
+<img src="imagenes/aprendejava.jpg" width="240px">
+
+[Aprende Java con Ejercicios](https://leanpub.com/aprendejava)
