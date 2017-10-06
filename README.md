@@ -29,6 +29,6 @@ javac HolaMundo.java
 * Git y GitHub.
 
 ## Bibliografía.
-<img src="/home/alumno/Documentos/DAW-Ejercicios-Programacion/imagenes/aprendejava.jpg" width="240px">
+<img src="imagenes/aprendejava.jpg" width="240px">
 
 [Aprende Java con Ejercicios](https://leanpub.com/aprendejava)
