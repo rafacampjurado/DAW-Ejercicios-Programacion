@@ -19,7 +19,7 @@ public class actv8 {
 	//~ System.out.println(diasTrabajados);
 	double horas = Integer.parseInt(horasTrabajadas);
 	double dias = Integer.parseInt(diasTrabajados);
-	double salario = horas * dias;
+	double salario = (horas * dias) * 12;
 	System.out.print("El salario semanal es: "+ salario +"€");
 	
 	}
