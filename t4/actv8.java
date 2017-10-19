@@ -25,13 +25,14 @@ public class actv8 {
 		double nota3 = Double.parseDouble(terceraNota);
 		double media = (nota1 + nota2 + nota3)/3;
 		System.out.println("Tu nota media es "+media);
-		if (media >= 5.00) {
+		
+		if (media == 5.00) {
 			System.out.print("Tu nota es suficiente");
 		}
 		else if (media <= 4.00) {
 			System.out.print("Tu nota es insuficiente");
 		}
-		else if (media >= 6.00) {
+		else if (media == 6.00) {
 			System.out.print("Tu nota es buena");
 		}
 		else if ((media >= 7.00) && (media <= 8.00)) {
