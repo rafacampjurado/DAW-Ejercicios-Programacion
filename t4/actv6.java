@@ -12,6 +12,17 @@
 public class actv6 {
 	
 	public static void main (String args[]) {
+		System.out.print("Introduce la altura: ");
+		String altura;
+		altura = System.console().readLine();
+		double h = Double.parseDouble(altura);
+		if (h > 0) {
+				double g = 9.81;
+		double tiempo = Math.sqrt(2*h/g);
+		System.out.print("El objeto tardará "+tiempo+" segundos");
+		} else {
+		System.out.print("La altura debe ser mayor que 0");
+		}
 		
 	}
 }
