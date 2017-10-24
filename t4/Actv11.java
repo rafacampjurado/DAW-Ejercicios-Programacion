@@ -15,8 +15,8 @@ public static void main (String args[]) {
 	System.out.print("Introduce los minutos: ");
 	int minutos = Integer.parseInt(System.console().readLine());
 	if ((hora < 24) || (minutos < 60)) {
-	segundosPorDia = (24 * 60 * 60);
-	segundosDelUsuario = (hora *60 * 60);
+	int segundosPorDia = 86400;
+	int segundosDelUsuario = (hora * 60 * 60);
 	System.out.print(segundosPorDia - segundosDelUsuario);
 	}
 	else {
