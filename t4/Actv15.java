@@ -13,7 +13,9 @@
 
 public class Actv15 {
 public static void main (String args[]) {
-System.out.print("Escribe un caracter: ");
+System.out.println("Elige uno de los siguientes caracteres : $,*,-,+ o & ");
+System.out.print("Tu elección: ");
+
 String pregunta = System.console().readLine();
 if (pregunta.equals("*")) {
 System.out.println("   *   ");
@@ -23,7 +25,38 @@ System.out.println("*******");
 }
 else {
 }
-
+if (pregunta.equals("+")) {
+System.out.println("   +   ");
+System.out.println("  +++  ");
+System.out.println(" +++++ ");
+System.out.println("+++++++");
+}
+else {
+}
+if (pregunta.equals("-")) {
+System.out.println("   -   ");
+System.out.println("  ---  ");
+System.out.println(" ----- ");
+System.out.println("-------");
+}
+else {
+}
+if (pregunta.equals("&")) {
+System.out.println("   &   ");
+System.out.println("  &&&  ");
+System.out.println(" &&&&& ");
+System.out.println("&&&&&&&");
+}
+else {
+}
+if (pregunta.equals("$")) {
+System.out.println("   $   ");
+System.out.println("  $$$  ");
+System.out.println(" $$$$$ ");
+System.out.println("$$$$$$$");
+}
+else {
+}
   }
 }
 
