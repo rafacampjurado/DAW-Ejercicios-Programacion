@@ -19,7 +19,7 @@ int puntuacion = 0;
 System.out.print("1. ¿Tu pareja parece estar más inquieta de lo normal sin ningún motivo aparente?: " );
 respuesta = System.console().readLine().toLowerCase();
 if (respuesta.equals("verdadero")) {
-puntuacion ++;puntuacion ++;puntuacion ++;
+++ puntuacion;++ puntuacion;++ puntuacion;
 System.out.print(puntuacion);
 } else {
   //~ System.out.print(puntuacion);
