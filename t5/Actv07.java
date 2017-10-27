@@ -13,7 +13,6 @@
 
 public class Actv07 {
 public static void main (String args[]) {
-  //~ int i = 0;
   int respuesta;
   for (int i = 0; i <4; i++){
     System.out.println("Introduce un número de 4 cifras: ");
