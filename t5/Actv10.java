@@ -12,20 +12,28 @@
 
 public class Actv10 {
 public static void main (String args[]) {
-   System.out.print("Introduce un número: ");
-  int A = Integer.parseInt(System.console().readLine());
+   double A = 0;
+   double contador = 0;
+   double C = 0;
+   System.out.print("Introduce varios números positivos: ");
   
-  for (int contador = 1; A >=0; contador++){
- int B = Integer.parseInt(System.console().readLine());
- int C = A+B;
- A = 0;
- System.out.print("Introduce un número: ");
- A = Integer.parseInt(System.console().readLine());
- System.out.print(C);
+  
+    while (A >=0) {
+      A = Integer.parseInt(System.console().readLine());
+      contador++;
+      C += A;
+      //~ Esto es igual que C = C+A;
+    }
+    System.out.print("Tu nota media es: "+(C - A)/(contador-1));
+    //~ Se resta uno al contador porque a pesar de que el número sea negativo
+    //~ se suma un número más al contador.
+    
+  
+ 
   
   }
 }
-}
+
   
   
 
