@@ -21,11 +21,13 @@ public static void main (String args[]) {
   
   
   
-  for (int contador = 1; contador < numExpo; contador++) {
-   formula *= numBase;
-   numExpo 
+  for (int contador = 1; contador <= numExpo; contador++) {
+   int formula = numBase * contador;
+   System.out.print("|"+numBase+"^"+contador+"|");
+   System.out.println("|"+formula+"|");
   
   }
+}
 }
 
 
