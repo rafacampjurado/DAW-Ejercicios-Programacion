@@ -17,17 +17,14 @@ public static void main (String args[]) {
   int numExpo = Integer.parseInt(System.console().readLine());
   
   int contador = numExpo;
+  int formula = 1;
   
-  int formula = numBase * numBase;
-  
-    
-  while (contador >0) {
+  while (contador > 0) {
   formula *= numBase;
   contador--;
-   //~ System.out.print(" "+formula);
-   //~ System.out.print("     "+contador);
    
-   if (contador ==0) {
+   
+   if (contador < 1) {
      System.out.print(formula);
     } else {
     }
