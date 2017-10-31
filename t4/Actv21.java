@@ -37,7 +37,7 @@ public class  Actv21 {
       System.out.print("Al recuperar el examen tu nota media es un 5.");
     } else {
       System.out.print("Al no recuperar el examen tu nota media es "+media);
-     } 
+     }   
   }
 }
 }
