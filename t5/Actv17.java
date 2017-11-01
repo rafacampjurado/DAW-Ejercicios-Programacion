@@ -1,5 +1,5 @@
 /*
- * Actv14¡7.java
+ * Actv17.java
  * 
  * Realiza un programa que sume los 100 números siguientes a un número entero
  * y positivo introducido por teclado. Se debe comprobar que el dato introducido
