@@ -13,33 +13,34 @@
 public class Actv21 {
 public static void main (String args[]) {
   int contador = 0;
-  int contadorPar = 0;
-  int contadorImpar = 0;
-  int contadorNegativo = 0;
-  int contadorPositivo = 0;
-  int C = 0;
-  int D = 0;
-
-   do {
-     System.out.print("Introduce un número: ");
-      int A = Integer.parseInt(System.console().readLine());
-      contador++;
-      if (A >=0){
-          if (A % 2 == 0){
-          int C += A;
-          contadorPar++;
-          }  else {
-          int D = D + A;
-          contadorPositivo++;
-          }
-      } else if (A <0){
-        contadorNegativo++;
+  int numero = 1;
+  int sumaImpares = 0;
+  int contadorImpares = 0;
+  int aux = 0;
+  while (numero >0){
+    System.out.print("Introduce un número: ");
+     numero = Integer.parseInt(System.console().readLine());
+     contador++;
+     aux = numero;
+     
+      if (numero % 2  >0){
+        contadorImpares++;
+        sumaImpares += numero; 
+        System.out.println(sumaImpares+" "+contadorImpares);
       }
+     
+      if (numero % 2 == 0){
       
+      }
+      if (numero <0){
+      System.out.println("Se han introducido "+contador+" números");
+      System.out.println("El mayor número par es: "+ numero);
+       }
+       
       
-      } while (contador <=10);
-      System.out.print("Hay "+contadorPositivo+" números positivos y "+contadorNegativo+" números negativos.");
-      
+  }
+  System.out.print("La media de los números impares es : "+(sumaImpares / contadorImpares));
+  
       
 
       
