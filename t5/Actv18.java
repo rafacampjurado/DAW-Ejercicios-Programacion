@@ -14,24 +14,21 @@ public class Actv18 {
 public static void main (String args[]) {
   System.out.print("Introduce un número entero: ");
   int A = Integer.parseInt(System.console().readLine());
+  
   System.out.print("Introduce un segundo  número entero: ");
   int B = Integer.parseInt(System.console().readLine());
-  int suma;
-  int aux;
-  if (A > B){
-    B = aux;
-    A = B;
-    aux = B;
-    
-    
-    while ((suma <= B)&&(suma >= A){
-      suma = 
-  //~ } else {
-  //~ }
-   
-  //~ while () {
-    }
   
+  //~ int aux = 0;
+  
+  if (A>B) {
+   int aux = A;
+   A = B;
+   B = aux;   
+  }
+  for (int i = A; i <= B; i = i + 7) {
+    System.out.print("|"+i+"|");
+  }
+  System.out.println();
   }
 }
 
