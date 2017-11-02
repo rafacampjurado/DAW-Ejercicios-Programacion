@@ -11,26 +11,26 @@
 
 public class Actv16 {
 public static void main (String args[]) {
-  System.out.print("Introduce un número: ");
-  int numPrimo = Integer.parseInt(System.console().readLine());
-  //~ int divisor;
-  int divisor = 2;
-  int division = numPrimo / divisor;
+  System.out.print("Introduzca un número entero: ");
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());
   
-  while (division >0){
-  
-  division = numPrimo / divisor;
-  System.out.println(" "+division);
-  
-  if (division == 0){
-    System.out.print("el número "+numPrimo+" es primo");
-  }else{
-    divisor++;
+  boolean esPrimo = true;
+    
+    for (int i = 2; i < numeroIntroducido; i++) {
+      if ((numeroIntroducido % i) == 0) {
+        esPrimo = false;
+      }
+    }
+        
+    if (esPrimo) {
+      System.out.println("El número introducido es primo.");
+    } else {
+      System.out.println("El número introducido no es primo.");
     }
     
  } 
 }
-}
+
 
 
 

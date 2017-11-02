@@ -1,15 +1,13 @@
 /*
- * Actv19.java
+ * Actv20.java
  * 
- * Realiza un programa que pinte una pirámide por pantalla. La altura se debe
- * pedir por teclado. El carácter con el que se pinta la pirámide también se debe
- * pedir por teclado.
+ * Igual que el ejercicio anterior pero esta vez se debe pintar una pirámide hueca.
  * 
  * @author Rafael Campos Jurado
  */
 
 
-public class Actv19 {
+public class Actv20 {
 public static void main (String args[]) {
   System.out.print("Introduce la altura de la pirámide: ");
   int pedirAltura = Integer.parseInt(System.console().readLine());
