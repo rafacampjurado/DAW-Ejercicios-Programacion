@@ -17,29 +17,31 @@ public static void main (String args[]) {
   int sumaImpares = 0;
   int contadorImpares = 0;
   int aux = 0;
+  
   while (numero >0){
     System.out.print("Introduce un número: ");
      numero = Integer.parseInt(System.console().readLine());
      contador++;
-     aux = numero;
      
-      if (numero % 2  >0){
+     
+      if (numero % 2  == 1){
         contadorImpares++;
         sumaImpares += numero; 
-        System.out.println(sumaImpares+" "+contadorImpares);
-      }
-     
-      if (numero % 2 == 0){
       
-      }
-      if (numero <0){
-      System.out.println("Se han introducido "+contador+" números");
-      System.out.println("El mayor número par es: "+ numero);
-       }
+      
+      } else  {
+          if (numero > aux) {
+          aux = numero;
+          
+          }
+        }
+        
        
       
   }
-  System.out.print("La media de los números impares es : "+(sumaImpares / contadorImpares));
+  System.out.println("La media de los números impares es : "+(sumaImpares / contadorImpares));
+  System.out.println("Se han introducido "+(contador - 1)+" números");
+      System.out.println("El mayor número par es: "+ aux);
   
       
 
