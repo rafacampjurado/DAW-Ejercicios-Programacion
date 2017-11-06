@@ -13,10 +13,10 @@ public static void main (String args[]) {
   int numero = 2;
   //~ int divisor = 2;
   
-  for (int divisor = 2;((numero >=2)&&(numero <=100)); divisor++) {
-    
+  for (int divisor = 2;((numero >1)&&(numero <101)); divisor++) {
+    numero++;
      if (numero % divisor == 0) {
-       numero++;
+       
         //~ divisor++;
      } else {
        System.out.print("|"+numero+"|");
