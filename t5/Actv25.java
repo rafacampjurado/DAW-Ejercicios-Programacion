@@ -1,22 +1,25 @@
 /*
  * Actv25.java
  * 
- * Escribe un programa que lea un número "n" e imprima una pirámide de números
- * con "n" filas como en la siguiente figura:
- *    1
- *   121
- *  12321
- * 1234321
- * 
+ * Realiza un programa que pida un número por teclado y que luego muestre ese
+ * número al revés.
  * @author Rafael Campos Jurado
  */
 
 
 public class Actv25 {
 public static void main (String args[]) {
-
-
-
+  System.out.print("Introduce un número: ");
+  int numeroA = Integer.parseInt(System.console().readLine());
+  int numeroB = numeroA;
+  int volteado = 0;
+  while (numeroB >0){
+    volteado = (volteado * 10) + (numeroB % 10);
+    numeroB = numeroB / 10;
+  }
+  System.out.print("El número volteado es: "+volteado);
+  
+   
 }
     
  }
