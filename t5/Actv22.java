@@ -26,23 +26,6 @@ public static void main (String args[]) {
 }
 }
   
-  //~ System.out.print("Introduzca un número entero: ");
-    //~ int numeroIntroducido = 2;
-  
-  //~ boolean esPrimo = true;
-    
-    //~ for (int i = 2; i < numeroIntroducido; i++) {
-      //~ if ((numeroIntroducido % i) == 0) {
-        //~ esPrimo = false;
-        //~ numeroIntroducido++;
-      //~ }
-    //~ }
-        
-    //~ if (esPrimo) {
-      //~ System.out.println("El número introducido es primo.");
-    //~ } else {
-      //~ System.out.println("El número introducido no es primo.");
-    //~ }
   
   
 
