@@ -30,7 +30,7 @@ public static void main (String args[]) {
     for (i = 1; i < altura * 2; i++) {
       System.out.print(relleno);
     }
-    //~ System.out.println();
+    System.out.println();
     altura++;
     espacios--;
   }

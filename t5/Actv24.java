@@ -30,7 +30,7 @@ System.out.print("Introduce la altura de la pirámide: ");
       System.out.print(" ");
     }
     
-    for (i = 1; i < altura * 1; i++) {
+    for (i = 1; i < altura * 2; i++) {
       System.out.print(relleno);
     }
     System.out.println();

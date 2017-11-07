@@ -16,36 +16,35 @@ public static void main (String args[]) {
   
   System.out.print("Introduce un dígito que componga el número anterior: ");
   int digitoIntroducido = Integer.parseInt(System.console().readLine());
+  int numero = numeroIntroducido;
   int volteado = 0;
   int suma = 0;
+  int longitud = 0;
   
-  int contadorPosiciones = 0;
+  int posicion = 1;
+   System.out.print("Contando de izquierda a derecha, el " + digitoIntroducido + " aparece dentro de " + numeroIntroducido + " en las siguientes posiciones: ");
   
-  //~ if (volteado == digitoIntroducido){
-    //~ System.out.print("El número ocupa la posición "+contadorPosiciones);
-  //~ } else {  
-  //~ while (volteado > 0){
-    //~ contadorPosiciones++;
-    //~ volteado = numeroIntroducido % 10;
-    //~ suma = (volteado * 10) + volteado;
-    //~ }
-  //~ }
-  
-  if ((numeroIntroducido % 10) == digitoIntroducido) {
-    contadorPosiciones++;
-    System.out.print("El dígito está en la posición "+contadorPosiciones);
-  } else {
-    //~ while (numeroIntroducido > 0 ){
-    //~ numeroIntroducido = numeroIntroducido /10;
-    //~ }
-  }
-  
-      
-  
-       
-  
-
-
-}
+  if (numero == 0) {
+      longitud = 1;
+    }
     
- }
+  while (numero > 0) {
+      volteado = (volteado * 10) + (numero % 10);
+      numero /= 10;
+      longitud++;
+    } // while
+        
+    // comprueba la posición
+    while (volteado > 0) {
+      if ((volteado % 10) == digitoIntroducido) {
+        System.out.print(posicion + " ");
+      }
+      volteado /= 10;
+      posicion++;
+    } // while
+
+    System.out.println();
+ 
+  }
+}
+
