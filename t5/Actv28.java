@@ -22,7 +22,7 @@ public class Actv28 {
     
     for (int i = (numeroIntroduccido - 1); i >0; i--) {
       numero = i * numero ;
-      numero = numero + mult;
+      
     }
     System.out.println(+ numeroIntroduccido+"! = "+numero);
   }
