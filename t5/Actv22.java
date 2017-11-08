@@ -8,30 +8,24 @@
 
 
 public class Actv22 {
-public static void main (String args[]) {
+
+  public static void main (String args[]) {
   
-  int numero = 2;
-  //~ int divisor = 2;
-  
-  for (int divisor = 2;((numero >1)&&(numero <101)); divisor++) {
-    numero++;
-     if (numero % divisor == 0) {
-       
-        //~ divisor++;
-     } else {
-       System.out.print("|"+numero+"|");
+    boolean esPrimo = true;
+    
+    for (int n = 2; n < 100; n++){
+      esPrimo = true;
+      
+      for (int divisor = 2; divisor < n; divisor++) {
+         if ((n % divisor) == 0) {
+           esPrimo = false;
+        } else {
+        }
+      } 
+     if (esPrimo){
+       System.out.print("|"+n+"|");
      }
+    } 
     
   }
 }
-}
-  
-  
-  
-
-
-
-  
-  
-
-
