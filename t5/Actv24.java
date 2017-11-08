@@ -16,28 +16,32 @@ public class Actv24 {
 public static void main (String args[]) {
 System.out.print("Introduce la altura de la pirámide: ");
   int pedirAltura = Integer.parseInt(System.console().readLine());
-  
-  //~ System.out.print("Introduce el carácter para rellenar la pirámide: ");
-  int relleno = pedirAltura;
-  
-  int altura = 1;
-  int i = 0;
-  int espacios = pedirAltura - 1;
-  
-  while (altura <= pedirAltura) {
-    
-    for (i = 1; i <= espacios;i++) {
-      System.out.print(" ");
-    }
-    
-    for (i = 1; i < altura * 2; i++) {
-      System.out.print(relleno);
-    }
-    System.out.println();
-    altura++;
-    espacios--;
-  }
+     int num = pedirAltura;
+        int longi = num- 1;
+        int altura=1;
+        int max=1;
+        int h=1;
+        
+        for (int i = 1; i <= num; i++) {
+          
+            for (int j = 1; j <= longi; j++) {
+                System.out.print(" ");
+            }
 
+            for (int j = 1; j < altura * 2; j++) {
+
+                if(j>max) {
+                    System.out.print(h-1);
+                    h--;
+                } else {
+                    System.out.print(j);
+                }
+            }
+            System.out.println("");
+            max++;
+            h=max;
+            altura++;
+            longi--;
+        }
+    }
 }
-    
- }
