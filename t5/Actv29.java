@@ -12,16 +12,15 @@ public class Actv29 {
  
  public static void main (String args[]) {
    System.out.print("Introduce un número: ");
-    int numeroIntroduccido = Integer.parseInt(System.console().readLine());
-    int numero = numeroIntroduccido;
-    int suma = 0;
-    int mult = 0;
-    
-    for (int i = (numeroIntroduccido - 1); i >0; i--) {
-      numero = i * numero ;
-      
-    }
-    System.out.println(+ numeroIntroduccido+"! = "+numero);
+   int numeroUno = Integer.parseInt(System.console().readLine());
+   System.out.print("Introduce otro número: ");
+   int numeroDos = Integer.parseInt(System.console().readLine());
+   
+   for (int i = 1; i < numeroUno; i++){
+      if ((i % numeroDos)!=0){
+      System.out.print("|"+i+"|");
+      }
+    }  
   }
 }
 
