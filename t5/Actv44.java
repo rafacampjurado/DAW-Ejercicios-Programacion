@@ -26,23 +26,29 @@ public class Actv44 {
   long volteado = 0;
   long numero = numeroIntroducido;
   //~ int longitud = 0;
+  long reves = 0;
+  int longitud = 0;
+  int longitudVuelta = 1;
   
   
-  for (int longitud = 1;numero > 0; longitud++) {
-      
-      if (longitud == numeroPosicion) {
-          volteado = (volteado * 10)+ numeroDos;
-          volteado = (volteado * 10)+ (numero % 10);
-      } else {
-        
+  while (numero > 0) {
       volteado = (volteado * 10) + (numero % 10);
-      }
       numero /= 10;
-      
-      //~ longitud++;
-      System.out.println(longitud);
+      longitud++;
     } // while
-    System.out.print(volteado);
+    //~ System.out.print("número volteado = "+ volteado);
+    
+  while (volteado > 0) {
+    if (numeroPosicion == (longitudVuelta + 1 )) {
+      reves = (reves * 10) + (volteado % 10);
+      reves = (reves * 10) + numeroDos;
+    } else {
+    reves = (reves * 10) + (volteado % 10);
+    }
+      volteado /= 10;
+      longitudVuelta++;
+    } // while
+    System.out.println("número añadido = "+ reves);
  }
 }
 
