@@ -7,7 +7,7 @@ package actividades;
  *
  * @author rafa
  */
-public class Actividad1 {
+public class Actv1 {
 public static void main(String[] args) {
   int dado = 0;
   int suma = 0;
