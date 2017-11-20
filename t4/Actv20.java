@@ -1,17 +1,14 @@
 /*
  * Actv20.java
- * 
  * Realiza un programa que diga si un número entero positivo introducido por
  * teclado es capicúa. Se permiten números de hasta 5 cifras.
  * 
- * @author Rafael Campos Jurado
+ * 
  */
- 
-public class Actv20 {
 
-  public static void main(String[] args) {
-    
-    int n;
+public class  Actv20 {
+ public static void main (String args[]) {
+  int n;
     boolean capicua = false;
     
     System.out.print("Por favor, introduzca un número entero (de 5 cifras como máximo): ");
@@ -56,5 +53,6 @@ public class Actv20 {
     } else {
       System.out.println("El número introducido no es capicúa.");
     }
-  }
+ }
 }
+
