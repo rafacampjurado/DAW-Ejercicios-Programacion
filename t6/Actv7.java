@@ -21,10 +21,11 @@ public class Actv7 {
           seleccion = ((int)(Math.random()*3)+1);
 //          System.out.print(i);
 //          System.out.print(numColumna+"  ");
-          numColumna++;
+          
         }
+        numColumna++;
         if (columnas == 0) {
-          System.out.print(numColumna);
+          System.out.print(+ (numColumna));
         }
             if (seleccion == 1) {
               System.out.print ("  "+colorOff +rojo + "  | X "+colorOff+"| x"+"| 2 |");
@@ -39,7 +40,7 @@ public class Actv7 {
             }
 
             if (seleccion == 3) {
-              System.out.print ("  "+colorOff + "  |"+" 1 "+colorOff+"| x"+rojo+"| X |");
+              System.out.print ("  "+colorOff + "  |"+" 1 "+colorOff+"| x"+rojo+"| X |"+colorOff);
               columnas++;
     //          System.out.println();
             }
