@@ -11,6 +11,9 @@ public class Actv5 {
     public static void main(String[] args) {
       int valor = 0;
       int posibilidad = 0;
+      int suma = 0;
+      int min = 199;
+      int max = 0;
 //      int esMax = 0;
 //      Bucle para mostrar los números
       for (int i = 0; i < 50; i++) {
@@ -38,7 +41,18 @@ public class Actv5 {
               }
            }
          }
+          suma += valor;
+          if (valor < min) {
+            min = valor;
+          }
+          if (valor > max) {
+            max = valor;
+          }
        System.out.println(valor);
       }
+       System.out.println("La media  de todos los números = "+ (suma / 50 ));
+       System.out.println("El número máximo es  = "+ max);
+       System.out.println("El número mínimo es = "+ min);
+       
     }
 }
