@@ -1,8 +1,8 @@
 //Muestra 20 números enteros aleatorios entre 0 y 10 (ambos incluidos) separados
 //por espacios.
-// *
-// * @author Rafael Campos Jurado
-// */
+//
+// @author Rafael Campos Jurado
+// 
 package actividades;
 
 
