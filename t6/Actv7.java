@@ -14,7 +14,7 @@ public class Actv7 {
       String rojo = "\033[31m";
       String colorOff="\033[0m";
       int columnas = 0;
-      int numColumna = 0;
+      int numColumna = 1;
       for (int i = 0; i < 45; i++) {
         
         for (int y = 0; y <  2; y++) {
@@ -23,9 +23,9 @@ public class Actv7 {
 //          System.out.print(numColumna+"  ");
           
         }
-        numColumna++;
+        
         if (columnas == 0) {
-          System.out.print(+ (numColumna));
+          System.out.print(numColumna);
         }
             if (seleccion == 1) {
               System.out.print ("  "+colorOff +rojo + "  | X "+colorOff+"| x"+"| 2 |");
@@ -46,9 +46,11 @@ public class Actv7 {
             }
             if (columnas == 3) {
               columnas = 0;
+              numColumna++;
               System.out.println();
 //              System.out.print(numColumna+"  ");
             }
+            
         
       }
     }
