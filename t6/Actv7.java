@@ -26,7 +26,7 @@ public class Actv7 {
         
         if (columnas == 0) {
 //          System.out.print(numColumna);
-          System.out.printf("%4d. |", numColumna);
+          System.out.printf("%4d. ", numColumna);
         }
             if (seleccion == 1) {
               System.out.print ("  "+colorOff +rojo + "  | X "+colorOff+"| x"+"| 2 |");
@@ -51,8 +51,6 @@ public class Actv7 {
               System.out.println();
 //              System.out.print(numColumna+"  ");
             }
-            
-        
       }
     }
 }
