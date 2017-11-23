@@ -14,7 +14,7 @@ public class Actv11{
     int contadorSuficiente = 0;
     int contadorBien = 0;
     int contadorNotable = 0;
-    int contadorSobresaliente = 0;
+    int contadorSobresaliente = 0;  
     for (int i = 0; i < 20; i++) {
       nota = ((int)(Math.random()*10)+1);
       if (nota < 5) {
