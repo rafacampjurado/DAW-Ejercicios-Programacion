@@ -27,61 +27,49 @@ public class Actv17 {
         for (int i = 0; i < 10; i++) {
             System.out.print(numero[i] + " ");
         }
-
+//INICIO BUCLE WHILE 
         while (salirBucle) {
             System.out.print("Introduce un número : ");
             preguntaNumero = s.nextInt();
-            
+
             for (int i = 0; i < 10; i++) {
                 if (numero[i] == preguntaNumero) {
                     salirBucle = false;
-//                    System.out.println("¡El número está dentro del Array!");
-                    
                 } else {
-//                    salirBucle = true;
-//                    System.out.println("¡El número no  está dentro del Array!");
                 }
-//                 System.out.println(salirBucle);
             }
             if (salirBucle) {
                 System.out.println("¡El número no  está dentro del Array!");
             }
-            
-
         }
-       System.out.println("¡El número está dentro del Array!");
+//FIN BUCLE WHILE
+        System.out.println("¡El número está dentro del Array!");
         int posicionOrdenado = 0;
+//METE EL NÚMERO ELEGIDO EN LA PRIMERA POSICIÓN
         if (posicionOrdenado < 10) {
             for (int i = 0; i < 10; i++) {
                 if (numero[i] == preguntaNumero) {
                     numeroOrdenado[posicionOrdenado] = numero[i];
                     posicionOrdenado++;
                 } else {
-                    
-                }
 
-//                posicionOrdenado++;
+                }
             }
-                            System.out.println("");
-        System.out.println("contador " + posicionOrdenado + " ");
+//FIN
+////METE LOS NÚMEROS RESTANTES EN EL NUEVO ARRAY
             if (posicionOrdenado < 10) {
                 for (int i = 0; i < 10; i++) {
                     if (numero[i] == preguntaNumero) {
-                        
                     } else {
-                                          numeroOrdenado[posicionOrdenado] = numero[i];
-                    posicionOrdenado++;  
+                        numeroOrdenado[posicionOrdenado] = numero[i];
+                        posicionOrdenado++;
                     }
-
                 }
             }
         }
+//FIN 
         for (int i = 0; i < 10; i++) {
             System.out.print(numeroOrdenado[i] + " ");
-            
         }
-        System.out.println("");
-        System.out.println("contador" + posicionOrdenado + " ");
-
     }
 }
