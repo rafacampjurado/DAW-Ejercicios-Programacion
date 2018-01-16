@@ -17,6 +17,6 @@ public class ejecucionFunciones {
 
     public static void main(String[] args) {
       
-System.out.println(matematicas.posicionDeDigito(23569,3));
+System.out.println(matematicas.quitaPorDetras(123456, 1));
     }
 }
