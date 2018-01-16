@@ -13,39 +13,10 @@ import java.util.Scanner;
  */
 import funciones.matematicas;
 
-public class prueba {
+public class ejecucionFunciones {
 
     public static void main(String[] args) {
-//        int numeroIntroducido = 0;
-//        int numero = 0;
-//        int posicion = 0;
-//        Scanner s = new Scanner(System.in);
-//        System.out.print("Introduce un número : ");
-//        numeroIntroducido = s.nextInt();
-//        numero = numeroIntroducido;
-//        System.out.print("Introduce la posición del dígito : ");
-//        posicion = s.nextInt();
-//        int volteado = 0;
-//        int contadorPosicion = 0;
-//        int digito = 0;
-//
-//        while (numero > 0) {
-//            volteado = (volteado * 10) + (numero % 10);
-//            numero = numero / 10;
-//        }
-//
-//        while (volteado > 0) {
-//            digito = volteado % 10;
-//            if (contadorPosicion == posicion) {
-//                System.out.print("El dígito es : " + digito);
-//                volteado = 0;
-//            } else {
-//                contadorPosicion++;
-//                numero = (numero * 10) + (volteado % 10);
-//                volteado = volteado / 10;
-//
-//            }
-//        }
-System.out.println(matematicas.siguientePrimo(3));
+      
+System.out.println(matematicas.posicionDeDigito(23569,3));
     }
 }
