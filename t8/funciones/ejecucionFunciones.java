@@ -17,6 +17,6 @@ public class ejecucionFunciones {
 
     public static void main(String[] args) {
       
-System.out.println(matematicas.quitaPorDetras(123456, 1));
+System.out.println(matematicas.quitaPorDelante(123456, 3));
     }
 }
