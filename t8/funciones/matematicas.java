@@ -13,8 +13,8 @@ public class matematicas {
    * @param numero valor que almacena el número original
    * @return numero volteado
    */
-  public static int voltea(int numero) {
-    int volteado = 0;
+  public static long voltea(long numero) {
+    long volteado = 0;
     while (numero > 0) {
       volteado = (volteado * 10) + (numero % 10);
       numero = numero / 10;
@@ -59,7 +59,8 @@ public class matematicas {
    * @param digitos contiene el valor con la cantidad de dígitos de dicho número
    * @return valor numérico.
    */
-  public static int digitos(int numero, int digitos) {
+  public static int digitos(long numero) {
+    int digitos = 0;
     for (int contador = 1; numero > 0; contador++) {
       numero = numero / 10;
       digitos = contador;
@@ -74,11 +75,11 @@ public class matematicas {
    * @param posicion contiene la posición del dígito
    * @return valor numérico en esa posición
    */
-  public static int digitoN(int numero, int posicion) {
-    int num = 0;
-    int volteado = 0;
+  public static long digitoN(long numero, int posicion) {
+    long num = 0;
+    long volteado = 0;
     int contador = 0;
-    int digito = 0;
+    long digito = 0;
     num = voltea(numero);
 
     while (contador <= posicion) {
@@ -114,10 +115,10 @@ public class matematicas {
    *
    *
    */
-  public static int posicionDeDigito(int numero, int digito) {
-    int volteado = voltea(numero);
+  public static long posicionDeDigito(long numero, int digito) {
+    long volteado = voltea(numero);
     int posicion = -1;
-    int valorDigito = 0;
+    long valorDigito = 0;
     numero = 0;
     while (volteado > 0) {
       valorDigito = volteado % 10;
@@ -138,9 +139,9 @@ public class matematicas {
    * @param digitos indica de cuántos dígitos se desean eliminar del número
    * @return devuelve el número sin la cantidad de dígitos que se indicaba
    */
-  public static int quitaPorDetras(int numero, int digitos) {
+  public static long quitaPorDetras(long numero, long digitos) {
     int contador = 1;
-    int volteado = 0;
+    long volteado = 0;
     volteado = voltea(numero);
     numero = 0;
 
@@ -161,10 +162,14 @@ public class matematicas {
   /**
    * Elimina los dígitos por delante
    *
+   * @param numero contiene el valor numérico con el que se desea operar.
+   * @param digitos indica la cantidad de dígitos que se desean eliminar del
+   * número original.
+   * @return devuelve el valor numérico modificado-
    */
-  public static int quitaPorDelante(int numero, int digitos) {
+  public static long quitaPorDelante(long numero, int digitos) {
     int contador = 1;
-    int volteado = voltea(numero);
+    long volteado = voltea(numero);
     numero = 0;
     while (volteado > 0) {
       if (contador <= digitos) {
@@ -178,4 +183,93 @@ public class matematicas {
 
   }
 
+  /**
+   * Devuelve el valor con la potencia indicada
+   *
+   * @param base número base con el que calcular la potencia
+   * @param exponente número exponente con el que calcular la potencia de la
+   * base.
+   * @return devuelve la potencia del número base por el exponente.
+   */
+  public static int potencia(int base, int exponente) {
+    int formula = 0;
+    for (int contador = 1; contador <= exponente; contador++) {
+      formula = base * contador;
+
+    }
+    return formula;
+  }
+
+  /**
+   * Añade un número al número original por detrás.
+   *
+   * @param numero númer original
+   * @param numeroAñadido número a añadir.
+   * @return devuelve el número con el número ya añadido.
+   */
+  public static long pegaPorDetras(long numero, long numeroAñadido) {
+    long volteado = 0;
+    int contador = 0;
+    while (numero > 0) {
+      if (contador == 0) {
+        volteado = (volteado * 10) + numeroAñadido;
+        contador++;
+      }
+      volteado = (volteado * 10) + (numero % 10);
+      numero = numero / 10;
+    }
+    volteado = voltea(volteado);
+    return volteado;
+  }
+
+  /**
+   * Añade un número a la cifra original por delante.
+   *
+   * @param numero contiene el valor numérico inicial
+   * @param numeroAñadido contiene el valor numérico que se desea añadir.
+   * @return devuelve el valor final con el número modificado
+   */
+  public static long pegaPorDelante(long numero, long numeroAñadido) {
+    long volteado = 0;
+    int contador = 0;
+    numero = voltea(numero);
+    while (numero > 0) {
+      if (contador == 0) {
+        volteado = (volteado * 10) + numeroAñadido;
+        contador++;
+      }
+      volteado = (volteado * 10) + (numero % 10);
+      numero = numero / 10;
+    }
+    return volteado;
+  }
+
+  /**
+   * Corta un número en dos partes a partir de la posición que se indica.
+   *
+   */
+  public static long trozoDeNumero(long x, int inicio, int fin) {
+    long longitud = digitos(x);
+//    longitud = longitud - fin;
+//    longitud = longitud - 1;
+    x = quitaPorDelante(x, inicio);
+    x = quitaPorDetras(x, longitud - fin - 1);
+    
+    return x;
+  }
+  
+  /**
+   * Junta dos números 
+   * 
+   */
+  public static long juntaNumeros(long numeroUno, long numeroDos) {
+    int digitosNumeroUno = 0;
+    long numeroFinal = 0;
+    digitosNumeroUno = digitos(numeroUno);
+    for (int i = 0; i < digitosNumeroUno; i++) {
+      numeroUno = numeroUno * 10;
+    }
+    numeroFinal = numeroUno + numeroDos;
+    return numeroFinal;
+  }
 }

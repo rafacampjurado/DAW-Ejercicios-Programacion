@@ -17,6 +17,6 @@ public class ejecucionFunciones {
 
     public static void main(String[] args) {
       
-System.out.println(matematicas.quitaPorDelante(123456, 3));
+System.out.println(matematicas.juntaNumeros(123,456));
     }
 }
