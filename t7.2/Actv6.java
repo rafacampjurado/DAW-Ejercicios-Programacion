@@ -23,28 +23,29 @@ public class Actv6 {
     String naranja = "\033[33m";
     String verde = "\033[32m";
     String blanco = "\033[37m";
-    while (!salirBucle) {
-      if (fila == 5) {
-        salirBucle = true;
-      } else {
-        salirBucle = false;
+    
+    int columna = 0;
+    boolean repetido = false;
+    int y = 0;
+    for(fila = 0; fila < 6; fila++) {
+      for(columna = 0; columna < 10; columna++) {
+        do {
+          num[fila][columna] = (int)(Math.random() * 1001);
+
+          // Comprueba si el número generado ya está en el array.
+          repetido = false;
+          for (y = 0; y< 10 * fila + columna; y++) {
+            if (num[fila][columna] == num[y / 10][y % 10]) {
+              repetido = true;
+            }
+          }
+        } while (repetido);
       }
-      for (int j = 0; j < 10; j++) {
-        num[fila][j] = (int) (Math.random() * 1001);
-      }
-      fila++;
-    }
-    ///////////////////////////Comprobar que ningún número se repite/////////////////////
-    fila = 0;
-    for (int i = 0; i < 60; i++) {
-      for (int j = 0; j < 6; j++) {
-        num[fila][j] = numeros[i];
-      }
-      fila++;
     }
 
     ///////////////////////////////////////monstramos el array//////////////////
     fila = 0;
+    salirBucle = true;
     while (salirBucle) {
       if (fila == 5) {
         salirBucle = false;

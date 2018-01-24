@@ -15,19 +15,19 @@ public class prueba {
     int numero[] = new int[60];
     boolean repetido = true;
 
-      for (int j = 0; j < 60; j++) {
-        do {
-          numero [j] = (int)(Math.random()* 10);
-          for (int k = 0; k < j; k++) {
-            if (numero [j] == numero [k]) {
-              repetido = true;
-            }
-          }
-        } while (repetido);
+      for (int i = 0; i < 60; i++) {
+         numero [i] = (int)(Math.random()* 20); 
       }
-
-    for (int y : numero) {
-      System.out.print("  " + y);
-    }
+      for (int i = 0; i < 60; i++) {
+          for (int j = 0; j < i; j++) {
+              if (numero [i] == numero [j]) {
+                  repetido = true;
+              }
+          }
+      }
+      for (int i : numero) {
+          System.out.print(" "+ numero [i]);
+          
+      }
   }
 }
