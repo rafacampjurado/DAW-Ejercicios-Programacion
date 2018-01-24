@@ -11,15 +11,23 @@ import java.util.Scanner;
 
 public class prueba {
 
-    public static void main(String[] args) {
-        int numero = -1;
-        for (int i = 0; i < 1000; i++) {
-            numero = (int) (Math.random() * 1001);
-            if ((numero == 0) || (numero == 1000)) {
-                System.out.println("|  " + numero + " |");
+  public static void main(String[] args) {
+    int numero[] = new int[60];
+    boolean repetido = true;
 
+      for (int j = 0; j < 60; j++) {
+        do {
+          numero [j] = (int)(Math.random()* 10);
+          for (int k = 0; k < j; k++) {
+            if (numero [j] == numero [k]) {
+              repetido = true;
             }
-        }
+          }
+        } while (repetido);
+      }
 
+    for (int y : numero) {
+      System.out.print("  " + y);
     }
+  }
 }
