@@ -16,7 +16,16 @@ import funciones.matematicas;
 public class ejecucionFunciones {
 
     public static void main(String[] args) {
-      
-System.out.println(matematicas.juntaNumeros(123,456));
+      int [] prueba = new int [40];
+
+        for (int i = 0; i < prueba.length; i++) {
+            prueba [i] = (int)(Math.random()*31)+1;
+        }
+        for (int i = 0; i < prueba.length; i++) {
+            System.out.print(prueba [i] + " ");
+        }
+        System.out.println("");
+        System.out.println("MIN "+ funcionesArray.minimoArrayInt(prueba));
+        System.out.println("MAX "+ funcionesArray.maximoArrayInt(prueba));
     }
 }

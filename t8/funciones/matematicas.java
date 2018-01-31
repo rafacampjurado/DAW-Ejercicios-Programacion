@@ -56,7 +56,6 @@ public class matematicas {
    * Comprueba la cantidad de dígitos que tiene un número
    *
    * @param numero contiene el valor del número que se desea comprobar
-   * @param digitos contiene el valor con la cantidad de dígitos de dicho número
    * @return valor numérico.
    */
   public static int digitos(long numero) {
