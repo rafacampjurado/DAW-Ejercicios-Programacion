@@ -16,16 +16,28 @@ import funciones.matematicas;
 public class ejecucionFunciones {
 
     public static void main(String[] args) {
-      int [] prueba = new int [40];
+        int[] prueba = funcionesArray.generaArrayInt(10, 1, 3);
+        int digito = prueba.length;
+
 
         for (int i = 0; i < prueba.length; i++) {
-            prueba [i] = (int)(Math.random()*31)+1;
+            System.out.print(prueba[i] + " ");
         }
-        for (int i = 0; i < prueba.length; i++) {
-            System.out.print(prueba [i] + " ");
-        }
+
         System.out.println("");
-        System.out.println("MIN "+ funcionesArray.minimoArrayInt(prueba));
-        System.out.println("MAX "+ funcionesArray.maximoArrayInt(prueba));
+        System.out.println("MIN " + funcionesArray.minimoArrayInt(prueba));
+        System.out.println("MAX " + funcionesArray.maximoArrayInt(prueba));
+        System.out.println("MEDIA " + funcionesArray.mediaArrayInt(prueba));
+        System.out.println("¿Numero en el array? " + funcionesArray.estaEnArrayInt(prueba, 1));
+        System.out.println("¿Posición del número  en el array? " + funcionesArray.posicionEnArray(prueba, 1));
+        funcionesArray.muestraArray(prueba);
+        System.out.println("");
+        
+        funcionesArray.muestraArray((funcionesArray.volteaArrayInt(prueba)));
+        System.out.println("");
+        System.out.print("---------------------------------");
+        System.out.println("");
+        System.out.println("tamaño array = "+ digito);
+
     }
 }
