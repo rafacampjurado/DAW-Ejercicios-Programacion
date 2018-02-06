@@ -18,6 +18,12 @@ public class Animal {
     this.nombreComun = nombreComun;
   }
 
+  public Animal(String nombreComun, String nombreCientifico, String reinoAnimal) {
+    this.nombreComun = nombreComun;
+    this.nombreCientifico = nombreCientifico;
+    this.reinoAnimal = reinoAnimal;
+  }
+
   public String getNombreComun() {
     return nombreComun;
   }

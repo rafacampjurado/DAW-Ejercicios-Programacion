@@ -13,6 +13,8 @@ public class Actv3 {
     Mamifero oso = new Mamifero("Oso pardo");
     oso.setAlimentacion("herbivoro");
     oso.comer();
+    Ave pinguino = new Ave("Pinguino", true);
+    pinguino.volar();
 //    gecko.comer();
 //    gecko.dormir();
 //    gecko.caminar();

@@ -21,6 +21,14 @@ public class Mamifero {
     this.nombreComun = nombreComun;
   }
 
+  public Mamifero(String nombreComun, String nombreCientifico, String tipoPelaje, String habitat, String alimentacion) {
+    this.nombreComun = nombreComun;
+    this.nombreCientifico = nombreCientifico;
+    this.tipoPelaje = tipoPelaje;
+    this.habitat = habitat;
+    this.alimentacion = alimentacion;
+  }
+
   public String getNombreComun() {
     return nombreComun;
   }
@@ -66,7 +74,7 @@ public class Mamifero {
     return "Mamifero{" + "nombreComun=" + nombreComun + ", nombreCientifico=" + nombreCientifico + ", tipoPelaje=" + tipoPelaje + ", habitat=" + habitat + ", alimentacion=" + alimentacion + '}';
   }
   
-  public void comer (){
+  public void comer () {
     switch(alimentacion) {
       case "carnivoro":
         System.out.println("El "+nombreComun+" está comiendo la carne de otro animal");
@@ -77,8 +85,13 @@ public class Mamifero {
       case "homnivoro":
         System.out.println("El "+nombreComun+" puede estar comiendo carne o plantasl");
         break;
-        default:
-          
+        default:  
     }
+  }
+    public void amamantar () {
+      System.out.println("El "+nombreComun+" está amamantando a sus crías");
+    }
+    public void parir () {
+      System.out.println("El "+nombreComun+" está dando a luz");
   }
 }
