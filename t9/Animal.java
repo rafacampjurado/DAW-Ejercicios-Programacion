@@ -10,62 +10,27 @@ package Objetos;
  * @author rafa
  */
 public class Animal {
-  String nombreComun;
-  String nombreCientifico;
-  String reinoAnimal;
+  private String sexo;
 
-  public Animal(String nombreComun) {
-    this.nombreComun = nombreComun;
+  public Animal() {
   }
 
-  public Animal(String nombreComun, String nombreCientifico, String reinoAnimal) {
-    this.nombreComun = nombreComun;
-    this.nombreCientifico = nombreCientifico;
-    this.reinoAnimal = reinoAnimal;
+  public Animal(String sexo) {
+    this.sexo = sexo;
   }
 
-  public String getNombreComun() {
-    return nombreComun;
+  public String getSexo() {
+    return sexo;
   }
 
-  public String getNombreCientifico() {
-    return nombreCientifico;
+  public void setSexo(String sexo) {
+    this.sexo = sexo;
   }
+public void comer (String comida) {
+  System.out.println("El animal está cominendo "+comida);
+} 
+public void dormir () {
+  System.out.println("El animal está durmiendo");
+}
 
-  public String getReinoAnimal() {
-    return reinoAnimal;
-  }
-
-  public void setNombreComun(String nombreComun) {
-    this.nombreComun = nombreComun;
-  }
-
-  public void setNombreCientifico(String nombreCientifico) {
-    this.nombreCientifico = nombreCientifico;
-  }
-  
- /*
-  Mamifero , Ave, Gato, Perro, Canario, Pinguino y Lagarto
-  */
-  public void setReinoAnimal(String reinoAnimal) {
-    this.reinoAnimal = reinoAnimal;
-  }
-
-  @Override
-  public String toString() {
-    return "Animal{" + "nombreComun=" + nombreComun + ", nombreCientifico=" + nombreCientifico + ", reinoAnimal=" + reinoAnimal + '}';
-  }
-
-
-
-  
-  public void comer () {
-    System.out.println("El "+ nombreComun + " está comiendo");
-  }
-  public void dormir () {
-    System.out.println("El "+nombreComun+ " está durmiendo");
-  }
-  public void caminar (){
-    System.out.println("El "+nombreComun+" está caminando");
-  }
 }

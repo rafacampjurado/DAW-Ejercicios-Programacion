@@ -10,8 +10,8 @@ package Objetos;
  * @author rafa
  */
 public class Fraccion {
-  int numerador;
-  int divisor;
+  private int numerador;
+  private int divisor;
 
   public Fraccion(int numerador, int divisor) {
     this.numerador = numerador;
@@ -39,12 +39,26 @@ public class Fraccion {
     return "Fraccion{" + "numerador = " + numerador + ", divisor = " + divisor + '}';
   }
   public void  invertir () {
-    numerador += 1;
-    divisor += 1;
+    int auxiliar = 0;
+    auxiliar = numerador;
+    numerador = divisor;
+    divisor = auxiliar;
   }
   public void simpificar () {
-    numerador -= 1;
-    divisor -= 1;
+    numerador = numerador /2;
+    divisor = divisor /2;
+  }
+  public void multiplicar () {
+    int aux = 0;
+    aux = numerador;
+    numerador = numerador * divisor;
+    divisor = aux * divisor;
+  }
+  public void divisor () {
+    int aux = 0;
+    aux = numerador;
+    numerador = numerador / divisor;
+    divisor = aux / divisor;
   }
   
 }

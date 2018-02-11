@@ -9,14 +9,12 @@ package Objetos;
 
 public class Actv3 {
   public static void main(String[] args) {
-    Animal gecko = new Animal("prueba01");
-    Mamifero oso = new Mamifero("Oso pardo");
-    oso.setAlimentacion("herbivoro");
-    oso.comer();
-    Ave pinguino = new Ave("Pinguino", true);
-    pinguino.volar();
-//    gecko.comer();
-//    gecko.dormir();
-//    gecko.caminar();
+    Animal prueba01 = new Animal("Macho");
+    Mamifero prueba02 = new Mamifero("Macho");
+    Perro perro01 = new Perro("Macho");
+    perro01.ladrar();
+    Ave aveprueba01 = new Ave(false);
+    aveprueba01.volar();
+    
   }
 }
